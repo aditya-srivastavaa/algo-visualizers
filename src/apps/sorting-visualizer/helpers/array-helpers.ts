@@ -47,3 +47,4 @@ export function configureArray(order: string, array: number[]) {
 
   return array;
 }
+

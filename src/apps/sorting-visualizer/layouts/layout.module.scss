@@ -10,3 +10,9 @@
   justify-content: center;
   margin: 30px 0 80px;
 }
+:global(body) {
+  background: linear-gradient(135deg, #0e0f21 0%, #1a1c2e 100%);
+  color: #f2f2f7;
+  font-family: "Inter", "Segoe UI", sans-serif;
+  transition: background 0.3s ease-in-out;
+}

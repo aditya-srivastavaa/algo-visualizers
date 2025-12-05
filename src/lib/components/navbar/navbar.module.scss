@@ -1,30 +1,42 @@
-@use '/src/host/styles/theme';
-
 .navbar {
-  position: relative;
   display: flex;
-  align-items: center;
   justify-content: space-between;
-  padding: 10px 20px;
-  margin-bottom: 20px;
-  box-shadow: 0 4px 4px theme.$shadow1;
+  align-items: center;
+  background: rgba(20, 20, 35, 0.6);
+  padding: 16px 32px;
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
 
-  img {
-    width: 25px;
-    height: 25px;
-  }
-}
+  ul {
+    display: flex;
+    gap: 20px;
 
-@media screen and (width >= 960px) {
-  .navbar.navbar {
-    padding: 10px 10px 10px 20px;
-  }
-}
+    li {
+      list-style: none;
 
-[data-theme='dark'] {
-  .navbar {
-    img {
-      filter: invert(1);
+      a {
+        color: #d9e7ff;
+        padding: 8px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: 600;
+        transition: all 0.2s ease-in-out;
+
+        &:hover {
+          background: rgba(255, 255, 255, 0.15);
+        }
+      }
     }
+  }
+
+  .active {
+    background: #007bff !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.4);
+    font-weight: 700;
+  }
+
+  .hamButton img {
+    filter: invert(95%);
   }
 }

@@ -6,6 +6,9 @@ import { mergeSort } from './merge';
 import { quickSort } from './quick';
 import { selectionSort } from './selection';
 import { shellSort } from './shell';
+import { radixSort } from './radix';
+import { bucketSort } from './bucket';
+
 
 export const algoList = [
   {
@@ -40,4 +43,16 @@ export const algoList = [
     name: 'cocktail',
     fn: cocktailSort,
   },
+  {
+  name: 'Radix Sort (LSD)',
+  fn: radixSort,
+},
+
+{
+  name: 'Bucket Sort',
+  fn: bucketSort,
+},
+
+
+
 ];

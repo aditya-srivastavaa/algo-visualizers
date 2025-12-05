@@ -26,3 +26,31 @@
   font-weight: 500;
   color: theme.$error;
 }
+
+.visualizer-container {
+  background: linear-gradient(135deg, #0e0f1a, #1e2030);
+  min-height: 100vh;
+  padding: 16px;
+}
+
+.bar {
+  background-color: #4da8ff;
+  border-radius: 4px;
+  transition: height 0.25s ease, background-color 0.25s ease;
+}
+
+/* highlight state */
+.bar[data-state='highlight'] {
+  background-color: #ffc727;
+}
+
+/* comparing or important action */
+.bar[data-state='swap'] {
+  background-color: #ff5252;
+}
+
+/* sorted */
+.bar[data-state='sort'] {
+  background-color: #50e3c2;
+}
+
